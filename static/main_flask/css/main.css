@@ -1,0 +1,78 @@
+.text {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFC1C1;
+    text-shadow: 3px 3px 2px #d16fda;
+    font-size: calc(22px + 2vw);
+}
+.text fail { 
+    color: #9b0000;
+    font-size: calc(20px + 3vw);
+    text-shadow: 5px 5px 3px rgb(226, 199, 199);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text bb {
+    color: #000000;
+    font-size: calc(15px + 3vw);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text chch {
+    color: #000000;
+    font-size: calc(8px + 2vw);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p {
+    color: #d16fda;
+    font-size: calc(25px + 3vw);
+    text-shadow: 5px 5px 3px white;
+}
+.button a {
+    text-decoration: none; 
+    text-transform: uppercase; 
+    color:#630b6b;
+}
+.button {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    cursor: pointer;
+    padding: 20px 30px;
+    border: 1px solid rgb(92, 22, 22);
+    opacity: 85%;
+    transition: transform .2s ease;
+    text-align: center;
+    font-weight: 900;
+    font-size: calc(12px + 1.5vw);
+    background-color: rgb(255, 226, 202);
+}
+.button:hover {
+    background-color: rgb(247, 206, 206);
+    transform: scale(1.25);
+    font-weight: 900;
+}
+.button a:hover {
+    color:#ec4747;
+}
+.try_button {
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    display: block;
+    width: 500px;
+    cursor: pointer;
+    padding: 20px 30px;
+    opacity: 85%;
+    text-align: center;
+    font-weight: 900;
+    font-size: calc(12px + 1.5vw);
+    background-color: rgb(255, 226, 202);
+}
+.try_button a {
+    text-decoration: none; 
+    text-transform: uppercase; 
+    color:#630b6b;
+}
+.try_button a:hover {
+    color:#ec4747;
+}

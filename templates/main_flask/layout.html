@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='main_flask/css/main.css') }}">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+    <title>MosWeader</title>
+    <style> 
+        html {height: 100%}
+        body {
+            background: url(static/main_flask/img/image_processing20200703-17070-1fe42rn.gif) no-repeat center top fixed;
+            background-size: cover;
+            }    
+    </style>
+</head>
+
+<body>
+    <div class='text'>
+        <h1>MoscowWeather bot</h1>
+
+        {% block content %}
+        {% endblock %}
+        
+    </div>
+</body>
+</html>

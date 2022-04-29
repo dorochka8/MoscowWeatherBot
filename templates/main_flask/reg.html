@@ -1,0 +1,72 @@
+{% extends 'main_flask/layout.html' %}
+
+
+{% block content %}
+<style>
+    input:invalid {
+        border-color:rgb(238, 58, 58);
+        border: 3px solid rgb(238, 58, 58);
+    }
+    input:valid {
+        border: 3px solid #c7ffc9;
+        background-color: #c7ffc9;
+        opacity: 80%;
+    }
+    button {
+        background-color: rgb(247, 206, 206);
+        border: 3px solid rgb(247, 206, 206);
+    }
+    button:hover {
+        background-color: #c7ffc9;
+        border: 3px solid #c7ffc9;
+        transform: scale(1.05);
+        font-weight: 900;
+        transition: 0.2s;
+        opacity: 80%;
+}
+</style>
+<div class="container">
+    <h3>Creating an account</h3>
+    <form method='post'>
+        
+        <input class='form-control'  
+            type='text' 
+            name="name" 
+            id="name" 
+            placeholder="Dora" 
+            pattern="[a-zA-Z]+" 
+            class="form-control" 
+            value="" 
+            oninvalid="this.setCustomValidity('You name must contain only latin latters')"
+            oninput="this.setCustomValidity('')"
+            title="Enter your name" 
+            required
+            autofocus 
+            style="width:200px; height:50px; font-size: 25px;">
+        <input class="form-control"
+            type="text" 
+            name="number" 
+            id="number" 
+            placeholder="+7-999-999-99-99" 
+            pattern="[\+]\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{2}[\-]\d{2}" 
+            minlength="16" 
+            maxlength="16"  
+            oninvalid="this.setCustomValidity('Please enter your phone number')"
+            oninput="this.setCustomValidity('')"
+            title="Enter your phone number"  
+            required
+            onfocus="this.value = this.value;"
+            style="width:300px; height:50px; font-size: 25px;">
+            <script>
+            $(document).ready(function() {
+                $("#number.form-control").mask("+7-999-999-99-99").on('click', function () {
+                if ($(this).val() === '+7-___-___-__-__') {
+                    $(this).get(0).setSelectionRange(3, 3); }}); 
+            });
+            </script>
+                    
+        <button type='submit' 
+            style="width:200px; height:58px; font-size: 25px;">GO!</button>
+    </form>
+</div>
+{% endblock %}

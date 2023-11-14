@@ -16,9 +16,9 @@ There are several things I direct for **all developers** for the moment.
 1. Clone the project from GitHub (*Windows compatibility*):
 
 ```
-git clone --recursive -j8 https://github.com/LaDoring/MoscowWeatherBot
+git clone --recursive -j8 https://github.com/dorochka8/MoscowWeatherBot
 ```
-2. Install `requirements.txt` (directly from https://github.com/LaDoring/MoscowWeatherBot/blob/main/requirements.txt to get all the libraries that are used in the project, *VS Code compatibility*).
+2. Install `requirements.txt` (directly from https://github.com/dorochka8/MoscowWeatherBot/blob/main/requirements.txt to get all the libraries that are used in the project, *VS Code compatibility*).
 3. Adjust configuration parameters:
 - Modify the values in `config.py`
 - Modify the values in `main_bot.py` (token, str 14)
